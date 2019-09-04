@@ -48,6 +48,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Infrastructure\DbFactory.cs" />
+    <Compile Include="Infrastructure\Disposable.cs" />
+    <Compile Include="Infrastructure\RepositotyBase.cs" />
+    <Compile Include="Infrastructure\UnitOfWork.cs" />
+    <Compile Include="NangShopDBContext.cs" />
+    <Compile Include="Infrastructure\IDbFactory.cs" />
+    <Compile Include="Infrastructure\IReponsitory.cs" />
+    <Compile Include="Infrastructure\IUnitOfWork.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -59,6 +67,13 @@
       <Project>{34cec349-dadf-4ccd-bd0e-ae7e43ac9100}</Project>
       <Name>NangShop.Common</Name>
     </ProjectReference>
+    <ProjectReference Include="..\NangShop.Model\NangShop.Model.csproj">
+      <Project>{55093FEE-D512-485E-BCDA-CBC3FCDDB479}</Project>
+      <Name>NangShop.Model</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Reponsitories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
