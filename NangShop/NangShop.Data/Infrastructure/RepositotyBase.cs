@@ -44,9 +44,13 @@ namespace NangShop.Data.Infrastructure
             dbSet.Attach(entity);
             dataContext.Entry(entity).State = EntityState.Modified;
         }
-
         public virtual void Delete(T entity)
         {
+            dbSet.Remove(entity);
+        }
+        public virtual void Delete(int id)
+        {
+            var entity = dbSet.Find(id);
             dbSet.Remove(entity);
         }
 
@@ -132,6 +136,8 @@ namespace NangShop.Data.Infrastructure
         {
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
+
+        
 
         #endregion Implementation
     }

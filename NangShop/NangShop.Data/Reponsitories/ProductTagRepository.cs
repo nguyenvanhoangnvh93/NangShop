@@ -3,7 +3,7 @@ using NangShop.Model.Models;
 
 namespace NangShop.Data.Reponsitories
 {
-    public interface IProductTagRepository
+    public interface IProductTagRepository : IRepository<ProductTag>
     {
     }
 

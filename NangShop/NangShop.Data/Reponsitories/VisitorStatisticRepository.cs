@@ -3,7 +3,7 @@ using NangShop.Model.Models;
 
 namespace NangShop.Data.Reponsitories
 {
-    public interface IVisitorStatisticRepository
+    public interface IVisitorStatisticRepository : IRepository<VisitorStatistic>
     {
     }
 
