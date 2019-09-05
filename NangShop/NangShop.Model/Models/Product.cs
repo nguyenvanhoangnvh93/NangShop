@@ -24,7 +24,7 @@ namespace NangShop.Model.Models
         [MaxLength(256)]
         public string Image { set; get; }
         [Column(TypeName = "xml")]
-        public XElement MoreImages { set; get; }
+        public string MoreImages { set; get; }
         public decimal Price { set; get; }
         public decimal? PromotionPrice { set; get; }
         public int Warranty { set; get; }
