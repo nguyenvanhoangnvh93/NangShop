@@ -13,7 +13,7 @@ namespace NangShop.Data.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "201909050157020_InitialDB"; }
+            get { return "201909110408449_InitialDB"; }
         }
         
         string IMigrationMetadata.Source
