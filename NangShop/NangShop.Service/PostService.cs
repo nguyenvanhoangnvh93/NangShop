@@ -1,11 +1,7 @@
 ﻿using NangShop.Data.Infrastructure;
 using NangShop.Data.Reponsitories;
 using NangShop.Model.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NangShop.Service
 {
@@ -30,8 +26,8 @@ namespace NangShop.Service
 
     public class PostService : IPostService
     {
-        IPostRepository _postRepository;
-        IUnitOfWork _unitOfWork;
+        private IPostRepository _postRepository;
+        private IUnitOfWork _unitOfWork;
 
         public PostService(IPostRepository postRepository, IUnitOfWork unitOfWork)
         {
@@ -58,7 +54,6 @@ namespace NangShop.Service
         {
             //TODO: Select all post by tag
             return _postRepository.GetMultiPaging(x => x.Status, out totalRow, page, pageSize);
-
         }
 
         public IEnumerable<Post> GetAllPaging(int page, int pageSize, out int totalRow)

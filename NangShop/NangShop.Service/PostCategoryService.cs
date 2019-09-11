@@ -1,11 +1,7 @@
 ﻿using NangShop.Data.Infrastructure;
 using NangShop.Data.Reponsitories;
 using NangShop.Model.Models;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NangShop.Service
 {
